@@ -1,0 +1,47 @@
+@layer components {
+  .container {
+    @apply bg-custom-rating-container-color w-96 h-custom-container-height p-8 rounded-3xl;
+  }
+  .main-title {
+    @apply text-white font-semibold text-2xl mb-2;
+  }
+  .circle {
+    @apply bg-button-bg-color rounded-full w-10 h-10 grid place-content-center mb-5;
+  }
+  .star {
+    @apply bg-button-bg-color;
+  }
+  .feedback-text {
+    @apply text-white text-feedback-text-color text-sm;
+  }
+  .ratings {
+    @apply grid grid-cols-5 mt-5 mb-8;
+  }
+  .rating-btn {
+    @apply w-10 h-10 border rounded-full bg-button-bg-color text-feedback-text-color;
+  }
+  .rating-btn.active {
+    @apply bg-submit-btn-color text-white;
+  }
+  .submit-btn {
+    @apply bg-submit-btn-color w-full text-white rounded-xl h-10 text-center;
+  }
+  .error-msg {
+    @apply text-center text-red-400 text-xs;
+  }
+  .thank-you-img {
+    @apply w-1/3 mb-8;
+  }
+  .thank-you-grid {
+    @apply grid place-items-center;
+  }
+  .feedback-result {
+    @apply bg-button-bg-color w-auto text-center rounded-2xl py-1 px-4 text-xs text-submit-btn-color mb-6;
+  }
+  .Thank-you-note {
+    @apply text-white text-2xl mb-2;
+  }
+  .support-message {
+    @apply text-feedback-text-color text-xs text-center;
+  }
+}
